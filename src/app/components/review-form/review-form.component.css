@@ -1,0 +1,51 @@
+.formComponent{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8192ca;
+    color: #4e4949;
+    font-family: sans-serif;
+}
+
+form{
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.radioOptions{
+	display: flex;
+	margin-top: 15px;
+}
+
+.ratings{
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+   align-items: center;
+}
+
+.formTextInput{
+	margin-top: 10px;
+   height: 25px;
+   padding: 5px 10px 5px 10px;
+   border: 1px solid #c7bbbb;
+   width: calc(100% - 20px);
+   float: right;
+   outline: none;
+   border-radius: 5px;
+}
+
+.formInput{
+	margin: 20px 0px 20px 0px;
+}
+
+.submitButton{
+   height: 40px;
+   font-size: 16px;
+   background-color: #407cb1;
+   border: none;
+   outline: none;
+   color: #fff;
+   cursor: pointer;
+}

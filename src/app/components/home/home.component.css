@@ -1,0 +1,46 @@
+.homeImage{
+	height: 200px;
+	width: 200px;
+    border-radius: 10px;
+}
+
+.homeImageDiv{
+	width: 250px;
+    display: flex;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.homeImagePaginator{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.homeImageDiv > span{
+    margin-top: 15px;
+}
+
+.homeImageCount{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.homePaginator{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.homePaginatorOption{
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.homePaginatorOptionDisabled{
+    margin-right: 20px;
+    color: #504f4f;
+    pointer-events: none;
+}

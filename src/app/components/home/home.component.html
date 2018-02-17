@@ -1,0 +1,17 @@
+<div id="homeMain" class="homeMain">
+
+	<div class="homeImagePaginator">
+		<div class="homeImageDiv"  *ngFor="let photo of imageList">
+			<img (click)="navigateToDetails(photo)" class="homeImage" [src]="photo.imageSrc">
+			<span *ngIf="photo.rating != -1">Rating : {{photo.rating}}</span><span *ngIf="photo.rating == -1">Not yet Rated</span>
+		</div>
+	</div>
+	<div class="homePaginator" *ngIf="showPaginatorOption">
+		<span [ngClass] = "pageNumber == 1 ? 'homePaginatorOptionDisabled' : 'homePaginatorOption'" (click)="changeContent('previous')"> << Previous</span>
+		<span [ngClass] = "pageNumber == totalPages ? 'homePaginatorOptionDisabled' : 'homePaginatorOption'" (click)="changeContent('next')"> Next >> </span>
+		<span>Page:{{pageNumber}} of {{totalPages}}</span> 
+	</div>
+	<div class="homeImageCount">
+		Total number of Images Reviewed is {{imagesReviewed}}
+	</div>
+</div>

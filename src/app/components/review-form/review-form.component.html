@@ -1,0 +1,37 @@
+<div class="formComponent">
+	<form #form="ngForm" (submit)="saveReview(form.value)">
+		<div class="formInput">
+			<label>Please rate the image!</label>
+			<div class="radioOptions">
+				<div class="ratings">
+					<span>1 : <input type="radio" name="rating" value="1" ngModel required></span>
+					<span>3 : <input type="radio" name="rating" value="3" ngModel required></span>
+					<span>5 : <input type="radio" name="rating" value="5" ngModel required></span>
+					<span>7 : <input type="radio" name="rating" value="7" ngModel required></span>
+					<span>9 : <input type="radio" name="rating" value="9" ngModel required></span>
+				</div>
+				<div class="ratings">
+					<span>2 : <input type="radio" name="rating" value="2" ngModel required></span>
+					<span>4 : <input type="radio" name="rating" value="4" ngModel required></span>
+					<span>6 : <input type="radio" name="rating" value="6" ngModel required></span>
+					<span>8 : <input type="radio" name="rating" value="8" ngModel required></span>
+					<span>10 : <input type="radio" name="rating" value="10" ngModel required></span>
+				</div>
+			</div>
+			<br>
+		</div>
+ 	
+	<div class="formInput">
+		<label>Name:</label>
+  		<input class="formTextInput" type="text" name="name" required ngModel>
+	</div>
+  	
+	<div class="formInput">
+		<label>Review:</label>
+  		<input  class="formTextInput" type="text" name="review" required ngModel>
+	</div>
+  		
+  	 <button class="submitButton" type="submit">Submit</button>
+  	
+  </form>
+</div>

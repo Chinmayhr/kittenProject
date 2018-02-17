@@ -1,0 +1,56 @@
+.detailsComponent{
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	min-height: calc(100vh - 50px);;
+	background-color: #8192ca;
+	 color: #4e4949;
+}
+
+.detailsImageSection{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	justify-content: center;
+    align-items: center;
+}
+
+.detailsImage{
+	width: 80%;
+}
+
+.detailsImage > img{
+	width: 100%;
+}
+
+header{
+	font-size: 20px;
+}
+
+/*made arrangements to tackle the display property of the parent*/
+hr{
+	display: none; 
+}
+
+.detailsImageDescription{
+	margin: 20px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 800px) {
+
+	.detailsComponent{
+		flex-direction: column;
+	}
+
+	.detailsImage{
+		margin-top: 50px;
+	}
+
+	hr{
+		display:block;
+		width: 60%;
+    	margin-bottom: 25px;
+	}
+}
